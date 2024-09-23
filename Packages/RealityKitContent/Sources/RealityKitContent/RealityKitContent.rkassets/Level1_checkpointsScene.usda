@@ -1,0 +1,730 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.16.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root" (
+    customData = {
+        float3 rotationEulerHint = (0, 0, 0)
+    }
+)
+{
+    reorder nameChildren = ["FloatingRocks", "Checkpoints", "DirectionalLight", "Flags", "Locks", "TikMarks", "DismissScene", "ShowScene"]
+    float2 ui:nodegraph:node:pos = (40, 40)
+    int ui:nodegraph:node:stackingOrder = 2
+    quatf xformOp:orient = (1, 0, 0, 0)
+    float3 xformOp:scale = (0.29384106, 0.29384106, 0.29384106)
+    float3 xformOp:translate = (0, 0, 0.1)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Xform "FloatingRocks" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["FloatingRock_0", "FloatingRock_1", "FloatingRock_2", "FloatingRock_3", "FloatingRock_4", "FloatingRock_5", "FloatingRock_6", "FloatingRock_7", "FloatingRock_8", "FloatingRock_9", "FloatingRock_10", "FloatingRock_11"]
+        float3 xformOp:translate = (0, 0.6806401, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "FloatingRock_0" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (0.10079613, 0, 0.76886964)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_1" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0, 0, 0)
+            }
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (0.16233265, 0.15093192, 0.6880658)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_2" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.2478252, 0, 0.82008773)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_3" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.32146636, 0.14693405, 0.69214976)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_4" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (0.27225602, 0.15093192, 0.17850466)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_5" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.31534055, 0.15093192, 0.16295204)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_6" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (0.18441942, 0.20875232, -0.01874482)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_7" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.19054519, 0.20497479, 0.007936245)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_8" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.7394545, 0.25698352, 0.05771745)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_9" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.42921165, 0.44011393, -0.36753887)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_10" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (3.4032004, 3.4032004, 3.4032004)
+            float3 xformOp:translate = (-0.29022497, 0.26429254, -0.36753887)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "FloatingRock_11" (
+            active = true
+            references = @FloatingRock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (40, 40)
+            int ui:nodegraph:node:stackingOrder = 2
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (2.3663242, 2.3663242, 2.3663242)
+            float3 xformOp:translate = (-0.830967, 0.42131674, 0.028859904)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    def Xform "Checkpoints" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["FruitBase", "FarmBase", "ColorsBase", "ForestBase", "OceanBase", "level1_fruitCheckpoint", "level1_farmCheckpoint", "level1_colorsCheckpoint", "level1_forestCheckpoint", "level1_oceanCheckpoint"]
+        float3 xformOp:translate = (0, 0.6806401, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "level1_farmCheckpoint" (
+            customData = {
+                float3 rotationEulerHint = (0, 0, 0)
+            }
+            references = @level1_farmCheckpoint.usdz@
+        )
+        {
+            reorder nameChildren = ["Materials", "Geom", "InputTarget", "Collider"]
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.31818745, 0.31818745, 0.31818745)
+            float3 xformOp:translate = (-0.6219208, 0.08134987, 0.4343257)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "InputTarget"
+            {
+                uniform token info:id = "RealityKit.InputTarget"
+            }
+
+            def RealityKitComponent "Collider"
+            {
+                uint group = 1
+                uniform token info:id = "RealityKit.Collider"
+                uint mask = 4294967295
+                token type = "Default"
+
+                def RealityKitStruct "Shape"
+                {
+                    float3 extent = (2.031692, 2.385614, 2.016246)
+                    float height = 2.385614
+                    float radius = 1.015846
+                    token shapeType = "Box"
+
+                    def RealityKitStruct "pose"
+                    {
+                        float3 position = (0.01660484, 0.62388146, 1.1920929e-7)
+                    }
+                }
+            }
+        }
+
+        def "level1_colorsCheckpoint" (
+            references = @level1_colorsCheckpoint.usdz@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0.33063877, 0.12458603, 0.45455474)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "InputTarget"
+            {
+                uniform token info:id = "RealityKit.InputTarget"
+            }
+
+            def RealityKitComponent "Collider"
+            {
+                uint group = 1
+                uniform token info:id = "RealityKit.Collider"
+                uint mask = 4294967295
+                token type = "Default"
+
+                def RealityKitStruct "Shape"
+                {
+                    float3 extent = (0.41633064, 0.5063947, 0.40341717)
+                    float height = 0.5063947
+                    float radius = 0.20816532
+                    token shapeType = "Box"
+
+                    def RealityKitStruct "pose"
+                    {
+                        float3 position = (-0.010040283, 0.06819999, -0.003939979)
+                    }
+                }
+            }
+        }
+
+        def "level1_forestCheckpoint" (
+            references = @level1_forestCheckpoint.usdz@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (-0.03525123, 0.18930429, -0.34830752)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "InputTarget"
+            {
+                uniform token info:id = "RealityKit.InputTarget"
+            }
+
+            def RealityKitComponent "Collider"
+            {
+                uint group = 1
+                uniform token info:id = "RealityKit.Collider"
+                uint mask = 4294967295
+                token type = "Default"
+
+                def RealityKitStruct "Shape"
+                {
+                    float3 extent = (0.4428178, 0.854419, 0.62371516)
+                    float height = 0.854419
+                    float radius = 0.31185758
+                    token shapeType = "Box"
+
+                    def RealityKitStruct "pose"
+                    {
+                        float3 position = (0.008585155, 0.11778124, 0.026188344)
+                    }
+                }
+            }
+        }
+
+        def "level1_oceanCheckpoint" (
+            references = @level1_oceanCheckpoint.usdz@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1.5778506, 1.5778506, 1.5778506)
+            float3 xformOp:translate = (-0.77964216, 0.5528879, -0.2874119)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "InputTarget"
+            {
+                uniform token info:id = "RealityKit.InputTarget"
+            }
+
+            def RealityKitComponent "Collider"
+            {
+                uint group = 1
+                uniform token info:id = "RealityKit.Collider"
+                uint mask = 4294967295
+                token type = "Default"
+
+                def RealityKitStruct "Shape"
+                {
+                    float3 extent = (0.332125, 0.13406742, 0.33190072)
+                    float height = 0.13406742
+                    float radius = 0.1660625
+                    token shapeType = "Box"
+
+                    def RealityKitStruct "pose"
+                    {
+                        float3 position = (0.005311981, 0.025081428, -0.010610022)
+                    }
+                }
+            }
+        }
+
+        def "level1_fruitCheckpoint" (
+            customData = {
+                float3 rotationEulerHint = (0, 0, 0)
+            }
+            references = @level1_fruitCheckpoint.usdz@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (0.46536985, 0.46536985, 0.46536985)
+            float3 xformOp:translate = (-0.051992156, 0, 1.095055)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitComponent "InputTarget"
+            {
+                uniform token info:id = "RealityKit.InputTarget"
+            }
+
+            def RealityKitComponent "Collider"
+            {
+                uint group = 1
+                uniform token info:id = "RealityKit.Collider"
+                uint mask = 4294967295
+                token type = "Default"
+
+                def RealityKitStruct "Shape"
+                {
+                    float3 extent = (1.05639, 1.4523828, 1.0765567)
+                    float height = 1.4523828
+                    float radius = 0.53827834
+                    token shapeType = "Box"
+
+                    def RealityKitStruct "pose"
+                    {
+                        float3 position = (-0.0012156963, 0.3375535, -0.0012517273)
+                    }
+                }
+            }
+
+            def RealityKitComponent "RCP_BehaviorsContainer"
+            {
+                rel behaviors = </Root/Checkpoints/level1_fruitCheckpoint/OnTap>
+                uniform token info:id = "RCP.BehaviorsContainer"
+            }
+
+            def Preliminary_Behavior "OnTap"
+            {
+                rel actions = </Root/Checkpoints/level1_fruitCheckpoint/OnTap/Action>
+                uniform bool exclusive
+                rel triggers = </Root/Checkpoints/level1_fruitCheckpoint/OnTap/Trigger>
+
+                def Preliminary_Trigger "Trigger"
+                {
+                    rel affectedObjects = </Root/Checkpoints/level1_fruitCheckpoint>
+                    token info:id = "TapGesture"
+                }
+
+                def Preliminary_Action "Action"
+                {
+                    rel affectedObjects = </Root>
+                    rel animationLibraryKey = </Root/DismissScene>
+                    rel animationLibraryKeyOverrideKey = </Root/Checkpoints/level1_fruitCheckpoint/OnTap/Trigger>
+                    token info:id = "PlayTimeline"
+                    int loops = 0
+                    int performCount = 1
+                    token type = "serial"
+                }
+            }
+        }
+    }
+
+    def Xform "DirectionalLight" (
+        active = false
+        customData = {
+            float3 rotationEulerHint = (-1.5686121, 0, 0)
+        }
+    )
+    {
+        quatf xformOp:orient = (0.7078786, -0.70633405, 0, 0)
+        float3 xformOp:scale = (0.9999999, 0.99999994, 0.99999994)
+        float3 xformOp:translate = (-0.2490697, 1.4069644, 0.22844467)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "DirectionalLight"
+        {
+            token info:id = "RealityKit.DirectionalLight"
+            float intensity = 10000
+
+            def RealityKitStruct "Shadow"
+            {
+            }
+        }
+    }
+
+    def Xform "Locks" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["level1_fruitCheckpoint_lock", "level1_farmCheckpoint_lock", "level1_colorsCheckpoint_lock", "level1_forestCheckpoint_lock", "level1_oceanCheckpoint_lock"]
+        float3 xformOp:translate = (0, 0.6806401, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "level1_farmCheckpoint_lock" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0.020331575, -4.847095e-9, -4.9274064e-11)
+            }
+            references = @Lock.usda@
+        )
+        {
+            quatf xformOp:orient = (0.9999483, 0.0101662055, -2.4238143e-9, 1.0868604e-15)
+            float3 xformOp:scale = (1.6371791, 1.637179, 1.637179)
+            float3 xformOp:translate = (-0.59945995, 0.33617258, 0.7052328)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_colorsCheckpoint_lock" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0.020331575, -4.847095e-9, -4.9274064e-11)
+            }
+            references = @Lock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (0.9999483, 0.0101662055, -2.4238143e-9, 1.0868604e-15)
+            float3 xformOp:scale = (1.6371791, 1.637179, 1.637179)
+            float3 xformOp:translate = (0.33328447, 0.31188586, 0.5481415)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_forestCheckpoint_lock" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0.020331575, -4.847095e-9, -4.9274064e-11)
+            }
+            references = @Lock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (40, 40)
+            int ui:nodegraph:node:stackingOrder = 2
+            quatf xformOp:orient = (0.9999483, 0.0101662055, -2.4238143e-9, 1.0868604e-15)
+            float3 xformOp:scale = (1.6371791, 1.637179, 1.637179)
+            float3 xformOp:translate = (-0.010436672, 0.4038664, -0.1482779)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_oceanCheckpoint_lock" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0.020331575, -4.847095e-9, -4.9274064e-11)
+            }
+            references = @Lock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (60, 60)
+            int ui:nodegraph:node:stackingOrder = 3
+            quatf xformOp:orient = (0.9999483, 0.0101662055, -2.4238143e-9, 1.0868604e-15)
+            float3 xformOp:scale = (1.6371791, 1.637179, 1.637179)
+            float3 xformOp:translate = (-0.7825119, 0.65351874, -0.29443032)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_fruitCheckpoint_lock" (
+            active = true
+            customData = {
+                float3 rotationEulerHint = (0.020331575, -4.847095e-9, -4.9274064e-11)
+            }
+            references = @Lock.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (0.9999483, 0.0101662055, -2.4238143e-9, 1.0842582e-15)
+            float3 xformOp:scale = (1.6371791, 1.637179, 1.637179)
+            float3 xformOp:translate = (-0.022068186, 0.19180912, 1.2704444)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    def Xform "TikMarks" (
+        active = true
+    )
+    {
+        reorder nameChildren = ["level1_fruitCheckpoint_tikMark", "level1_colorsCheckpoint_tikMark", "level1_farmCheckpoint_tikMark", "level1_forestCheckpoint_tikMark", "level1_oceanCheckpoint_tikMark"]
+        float3 xformOp:translate = (0, 0.6806401, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def "level1_fruitCheckpoint_tikMark" (
+            active = true
+            references = @GreenTikMark.usda@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (-0.06367717, 0.12550856, 1.2374699)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_colorsCheckpoint_tikMark" (
+            active = true
+            references = @GreenTikMark.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0.3332754, 0.27339172, 0.5481536)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_farmCheckpoint_tikMark" (
+            active = true
+            references = @GreenTikMark.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (-0.5994737, 0.30184737, 0.7052452)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_forestCheckpoint_tikMark" (
+            active = true
+            references = @GreenTikMark.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (-0.010447825, 0.35627982, -0.14827746)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def "level1_oceanCheckpoint_tikMark" (
+            active = true
+            references = @GreenTikMark.usda@
+        )
+        {
+            float2 ui:nodegraph:node:pos = (20, 20)
+            int ui:nodegraph:node:stackingOrder = 1
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (-0.7824979, 0.60754466, -0.2944449)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+
+    def RealityKitTimeline "DismissScene"
+    {
+        reorder nameChildren = ["Track", "Track2"]
+        def RealityKitTrack "Track"
+        {
+            def RealityKitAction "Transform_By"
+            {
+                string actionKind = "moveBy"
+                int blendLayer = 300
+                double duration = 0.6
+                uniform token info:id = "5DB32E08-594C-4B6B-B0C8-8E17F309E7A1"
+                bool isActive = 1
+                float3 scale = (0.01, 0.01, 0.01)
+                double startTime = 0
+                rel target = </Root>
+
+                def RealityKitStruct "timingFunction"
+                {
+                    token type = "easeOut"
+                }
+            }
+        }
+    }
+
+    def RealityKitComponent "RCP_BehaviorsContainer"
+    {
+        rel behaviors = [
+            </Root/OnNotification>,
+            </Root/OnNotification2>,
+        ]
+        uniform token info:id = "RCP.BehaviorsContainer"
+    }
+
+    def RealityKitTimeline "ShowScene"
+    {
+        reorder nameChildren = ["Track", "Track2"]
+        def RealityKitTrack "Track"
+        {
+            reorder nameChildren = ["Transform_By", "Spin"]
+            def RealityKitAction "Transform_By"
+            {
+                string actionKind = "moveBy"
+                int blendLayer = 300
+                double duration = 1
+                uniform token info:id = "5DB32E08-594C-4B6B-B0C8-8E17F309E7A1"
+                bool isActive = 1
+                float3 scale = (100, 100, 100)
+                double startTime = 0
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+
+                def RealityKitStruct "timingFunction"
+                {
+                    token type = "easeInOut"
+                }
+            }
+        }
+
+        def RealityKitTrack "Track2"
+        {
+            def RealityKitAction "Spin"
+            {
+                string actionKind = "spin"
+                int blendLayer = 400
+                double duration = 1
+                uniform token info:id = "E209ABAD-3171-4B4A-8485-E309CB6424BA"
+                float revolutions = 1
+                token spinDirection = "counterclockwise"
+                double startTime = 0
+                rel target = </Root>
+                float2 ui:nodegraph:node:pos = (20, 20)
+                int ui:nodegraph:node:stackingOrder = 1
+
+                def RealityKitStruct "timingFunction"
+                {
+                    float2 controlPoint2 = (10, 1)
+                    token type = "easeOut"
+                }
+            }
+        }
+    }
+
+    def Preliminary_Behavior "OnNotification"
+    {
+        rel actions = </Root/OnNotification/Action>
+        uniform bool exclusive
+        rel triggers = </Root/OnNotification/Trigger>
+
+        def Preliminary_Trigger "Trigger"
+        {
+            rel affectedObjects = </Root>
+            string identifier = "showSceneAnimation"
+            token info:id = "Notification"
+        }
+
+        def Preliminary_Action "Action"
+        {
+            rel affectedObjects = </Root>
+            rel animationLibraryKey = </Root/ShowScene>
+            rel animationLibraryKeyOverrideKey = </Root/OnNotification/Trigger>
+            token info:id = "PlayTimeline"
+            int loops = 0
+            int performCount = 1
+            token type = "serial"
+        }
+    }
+
+    def Preliminary_Behavior "OnNotification2"
+    {
+        rel actions = </Root/OnNotification2/Action>
+        uniform bool exclusive
+        rel triggers = </Root/OnNotification2/Trigger>
+
+        def Preliminary_Trigger "Trigger"
+        {
+            rel affectedObjects = </Root>
+            token info:id = "Notification"
+        }
+
+        def Preliminary_Action "Action"
+        {
+            rel affectedObjects = None
+            rel animationLibraryKeyOverrideKey = </Root/OnNotification2/Trigger>
+            token info:id = "PlayTimeline"
+            int loops = 0
+            int performCount = 1
+            token type = "serial"
+        }
+    }
+}
+

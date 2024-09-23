@@ -1,0 +1,28 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.16.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "Lock" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, -3.1653755, 0)
+        }
+        prepend references = @Lock.usdz@
+    )
+    {
+        float2 ui:nodegraph:node:pos = (20, 20)
+        int ui:nodegraph:node:stackingOrder = 1
+        quatf xformOp:orient = (0.011891366, 0, 0.9999293, 0)
+        float3 xformOp:scale = (0.266648, 0.266648, 0.266648)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+

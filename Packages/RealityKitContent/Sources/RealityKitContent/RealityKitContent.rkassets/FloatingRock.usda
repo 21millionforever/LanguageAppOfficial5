@@ -1,0 +1,26 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.16.0.2)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "FloatingIsland" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0, 0)
+        }
+        prepend references = @FloatingIsland.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.99999994, 0, 0, 0)
+        float3 xformOp:scale = (0.020016648, 0.020016648, 0.020016648)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
